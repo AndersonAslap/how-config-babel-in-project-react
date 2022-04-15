@@ -4,3 +4,26 @@
 
 > Plataforma do Babel
 - https://babeljs.io/
+
+> Adicionando o Babel a uma aplicação React como dependência de desenvolvimento.
+
+```bash
+yarn add @babel/core @babel/cli @babel/preset-env -D
+```
+
+> Após instalar essas bibliotecas deve criar na raiz do projeto um arquivo chamado babel.config.js e adicionar as configurações abaixo.
+
+- @babel/core : A biblioteca principal do babel, 90% das funcionalidades do babel está nela.
+
+- @babel/cli : É uma biblioteca para conseguir executar o babel através da linha de comando.
+
+- @babel/preset-env : É uma biblioteca que identifica em qual ambiente a aplicação está sendo executada para converter a aplicação da melhor maneira possível.
+
+```js
+module.exports = {
+    presets: [
+        '@babel/preset-env'
+    ]
+}
+```
+
