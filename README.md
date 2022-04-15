@@ -30,7 +30,7 @@ module.exports = {
 }
 ```
 
-> Testando o babel
+> Testando o babel (javascript)
 
 - Crie um arquivo javascript e adicione algum trecho de código após isso execute a linha de comando abaixo.
 
@@ -65,6 +65,25 @@ module.exports = {
         '@babel/preset-react'
     ]
 }
+```
+
+> Testando o babel (react)
+
+- Crie um arquivo jsx ou js e adicione algum trecho de código após isso execute a linha de comando abaixo.
+
+```jsx
+
+// src/index.jsx
+
+import React from 'react';
+
+function App() {
+    return <h1>Hello World</h1>
+}
+```
+
+```bash
+yarn babel src/index.jsx --out-file <nome-arquivo-relativo>
 ```
 
 - Com isso temos a estrutura do babel configurada para se trabalhar com aplicações javascrip ou react de uma maneira moderna.
